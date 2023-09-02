@@ -8,21 +8,32 @@ let obj2={age:5,name:"Person1"}
         {
          console.log("false")
         }
-
-
-
-        let object1=
-        {
-            name :"person1",
-            age : 5,
-        }
-        console.log(Object.keys(object1));
         
-        let object2=
-        {
-            age : 5,
-            name :"person1",
-        }
-        console.log(Object.keys(object2));
+        console.log(Object.keys(obj1)===Object.keys(obj2))
+        console.log(JSON.stringify(obj1));
+        console.log(JSON.stringify(obj2));
+        console.log(JSON.stringify(obj1) === JSON.stringify(obj2));
+        console.log(obj1 === obj2);
+ var objKey1 = Object.keys(obj1).sort();
+ var objKey2 = Object.keys(obj2).sort();
+ console.log(objKey1);
+ console.log(objKey2);
+ let ob1=objKey1.length;
+ let ob2=objKey1.length;
+   
+ if(ob1===ob2)
+ {
+    function check(o1,o2)
+    {
+        console.log(JSON.stringify(o1) === JSON.stringify(o2));
+    }
+    
+ } 
+  else{
+    console.log("length not equal");
+  } 
+  check(objs1,obj2)
+     
         
-        console.log(Object.keys(object2)==Object.keys(object2))
+ 
+ 
