@@ -20,6 +20,7 @@ let obj2={age:5,name:"Person1"}
  console.log(objKey2);
  let ob1=objKey1.length;
  let ob2=objKey1.length;
+ console.log(ob1 === ob2);
    
  if(ob1===ob2)
  {
@@ -32,8 +33,4 @@ let obj2={age:5,name:"Person1"}
   else{
     console.log("length not equal");
   } 
-  check(objs1,obj2)
-     
-        
- 
- 
+  check(obj1,obj2)
